@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container video{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    mix-blend-mode: darken;
+
+}
+.navbar{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin: 0%;
+    padding: 35px 0;
+    width: 85%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+   
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    /* background: #0f7999; */
+    background: #EF8A91;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.content{
+    position: absolute;
+    left: 0%;
+    top: 60%;
+    margin: 0%;
+    padding: 0 300px;
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.content p{
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+button{
+    position: absolute;
+    right: 45%;
+    top: 70px;
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* border: 2px solid #0f7999; */
+    border: 2px solid #EF8A91;
+    color: #fff;
+    cursor: pointer;
+    /* background: linear-gradient(to left, transparent 50%, #0f7999 50%); */
+    background: linear-gradient(to left, transparent 50%, #EF8A91 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: 0.5s;
+}
+button:hover{
+    background-position: left;
+    color: #fff;
+}
